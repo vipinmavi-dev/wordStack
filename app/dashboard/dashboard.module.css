@@ -1,0 +1,445 @@
+:root {
+    --bg-main: #f4f7f6;
+    --bg-sidebar: #ffffff;
+    --bg-card: #ffffff;
+    --text-dark: #122421;
+    --text-muted: #64748b;
+    --accent-green: #065f46;
+    --accent-light-green: #e6f4f0;
+    --accent-yellow-bg: #fef3c7;
+    --accent-yellow-text: #d97706;
+    --accent-green-bg: #dcfce7;
+    --accent-green-text: #15803d;
+    --border-color: #e2e8f0;
+  }
+  
+  .appContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 900px;
+    background-color: var(--bg-main);
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 260px;
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  
+  .brandLogo {
+    width: 36px;
+    height: 36px;
+    background-color: var(--accent-green);
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .brandName {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+  
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .navItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .navItem i {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .navItem:hover {
+    background-color: #f8fafc;
+    color: var(--text-dark);
+  }
+  
+  .navItem.active {
+    background-color: var(--accent-light-green);
+    color: var(--accent-green);
+    font-weight: 600;
+  }
+  
+  .challengeCard {
+    background-color: var(--accent-light-green);
+    padding: 16px;
+    border-radius: 12px;
+  }
+  
+  .challengeCard h4 {
+    color: var(--accent-green);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  
+  .challengeCard p {
+    color: #047857;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  /* Main Content */
+  .mainContent {
+    flex: 1;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* Header */
+  .topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .welcomeText h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  
+  .welcomeText p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  
+  .headerRight {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .searchBar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: 220px;
+  }
+  
+  .searchBar i {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted);
+  }
+  
+  .searchBar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  
+  .userProfile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .userName {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  /* Cards Base */
+  .card {
+    border-radius: 12px;
+    padding: 24px;
+  }
+  
+  .cardDark {
+    background-color: var(--accent-green);
+    color: white;
+  }
+  
+  .cardWhite {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+  }
+  
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .cardLabel {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  .cardDark .cardLabel {
+    color: #a7f3d0;
+  }
+  
+  .cardWhite .cardLabel {
+    color: var(--text-muted);
+  }
+  
+  .cardHeader .icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .cardMetric {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .cardFooter {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .cardDark .cardFooter {
+    color: #a7f3d0;
+  }
+  
+  .cardWhite .cardFooter {
+    color: var(--text-muted);
+  }
+  
+  /* Metrics Grid */
+  .metricsGrid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+    gap: 20px;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  
+  .btn {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .btnPrimary {
+    background-color: var(--accent-green);
+    color: white;
+  }
+  
+  .btnSecondary {
+    background-color: var(--accent-light-green);
+    color: var(--accent-green);
+  }
+  
+  .btnLight {
+    background-color: #f1f5f9;
+    color: var(--text-dark);
+  }
+  
+  /* Content Grid */
+  .contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .contentCard {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardTitleBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cardTitleBar h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .viewAll {
+    color: var(--accent-green);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  
+  /* Word List */
+  .wordList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .wordItem {
+    background-color: #f8fafc;
+    padding: 14px 18px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .wordHead {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .wordTitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  
+  .badgeYellow {
+    background-color: var(--accent-yellow-bg);
+    color: var(--accent-yellow-text);
+  }
+  
+  .badgeGreen {
+    background-color: var(--accent-green-bg);
+    color: var(--accent-green-text);
+  }
+  
+  .wordDef {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  
+  .statusIndicator {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  
+  .dotGold { background-color: #eab308; }
+  .dotSilver { background-color: #f97316; }
+  .dotBronze { background-color: #ef4444; }
+  
+  /* Chart Styling */
+  .chartHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .chartHeader p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  
+  .chartContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 220px;
+    padding-top: 30px;
+    margin-top: auto;
+  }
+  
+  .chartBarGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 8px;
+    width: 10%;
+  }
+  
+  .barValue {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+  
+  .bar {
+    width: 100%;
+    background-color: var(--accent-green);
+    border-radius: 4px;
+    transition: height 0.3s ease;
+  }
+  
+  .barLabel {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
