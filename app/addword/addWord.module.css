@@ -1,0 +1,1010 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+
+  background: #f7f9fb;
+  color: #172033;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* =========================================
+   SIDEBAR - DESKTOP
+========================================= */
+
+.sidebar {
+  width: 225px;
+  min-width: 225px;
+  height: 100vh;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 22px 20px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border-right: 1px solid #dfe5ec;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 38px;
+}
+
+.logoIcon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #006b52;
+
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.logoText {
+  color: #172033;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  width: 100%;
+}
+
+.navItem {
+  width: 100%;
+  min-height: 36px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 11px;
+
+  border-radius: 8px;
+
+  color: #46546a;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.navItem:hover {
+  background: #f0f7f4;
+
+  color: #006b52;
+}
+
+.activeNavItem {
+  background: #e9faf3;
+
+  color: #006b52;
+
+  font-weight: 600;
+}
+
+.navIcon {
+  width: 18px;
+  min-width: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+.navLabel {
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   DAILY CHALLENGE
+========================================= */
+
+.dailyChallenge {
+  margin-top: auto;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  background: #e9faf3;
+}
+
+.challengeTitle {
+  margin: 0 0 8px;
+
+  color: #006b52;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.challengeText {
+  margin: 0;
+
+  color: #526979;
+
+  font-size: 11px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.mainContent {
+  min-width: 0;
+
+  flex: 1;
+
+  padding: 30px 38px 60px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.pageHeader {
+  width: 100%;
+  min-height: 77px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 12px 18px;
+
+  border: 1px solid #e1e7ee;
+
+  background: #f9fbfc;
+}
+
+.pageHeading {
+  min-width: 0;
+  flex: 1;
+}
+
+.pageHeading h1 {
+  margin: 0 0 4px;
+
+  color: #172033;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 29px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.pageHeading p {
+  margin: 0;
+
+  color: #47566e;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   HEADER ACTIONS
+========================================= */
+
+.headerActions {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.quickSearch {
+  width: 225px;
+  height: 32px;
+
+  position: relative;
+}
+
+.quickSearch input {
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  padding: 0 10px 0 34px;
+
+  border: 1px solid #dce3ec;
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  outline: none;
+
+  color: #29364b;
+
+  font-size: 11px;
+}
+
+.quickSearch input::placeholder {
+  color: #9aa8ba;
+}
+
+.quickSearch input:focus {
+  border-color: #80a99c;
+}
+
+.searchIcon {
+  position: absolute;
+
+  left: 11px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #8fa0b4;
+
+  font-size: 20px;
+
+  z-index: 1;
+}
+
+
+/* =========================================
+   USER PROFILE
+========================================= */
+
+.userProfile {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #b99a75,
+    #5b493c
+  );
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.userName {
+  white-space: nowrap;
+
+  color: #172033;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.formCard {
+  width: min(752px, 100%);
+
+  margin-top: 22px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe6ee;
+
+  border-radius: 15px;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.formGrid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 22px;
+
+  margin-bottom: 22px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.formGroup {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 22px;
+}
+
+.formGrid .formGroup {
+  margin-bottom: 0;
+}
+
+.formGroup label {
+  color: #45546a;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.formInput {
+  width: 100%;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  padding: 0 11px;
+
+  border: 1px solid #dce4ed;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  outline: none;
+
+  color: #26334a;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.formInput:focus {
+  border-color: #78a997;
+
+  box-shadow:
+    0 0 0 2px rgba(0, 107, 82, 0.08);
+}
+
+.formInput::placeholder {
+  color: #9ca9b8;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+select.formInput {
+  cursor: pointer;
+}
+
+
+/* =========================================
+   FORM BUTTONS
+========================================= */
+
+.formActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 14px;
+
+  margin-top: 6px;
+}
+
+.cancelButton,
+.saveButton {
+  height: 37px;
+
+  padding: 0 18px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cancelButton {
+  border: 1px solid #dce4ed;
+
+  background: #ffffff;
+
+  color: #506078;
+}
+
+.cancelButton:hover {
+  background: #f6f8fa;
+}
+
+.saveButton {
+  min-width: 151px;
+
+  border: 1px solid #006b52;
+
+  background: #006b52;
+
+  color: #ffffff;
+}
+
+.saveButton:hover {
+  background: #005943;
+}
+
+
+/* ==================================================
+   LARGE LAPTOP
+   1200px and below
+================================================== */
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 205px;
+    min-width: 205px;
+
+    padding: 20px 15px;
+  }
+
+  .mainContent {
+    padding: 26px 28px 50px;
+  }
+
+  .pageHeader {
+    gap: 20px;
+  }
+
+  .quickSearch {
+    width: 190px;
+  }
+
+  .formCard {
+    max-width: 752px;
+  }
+}
+
+
+/* ==================================================
+   TABLET / IPAD
+   1024px and below
+================================================== */
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 190px;
+    min-width: 190px;
+
+    padding: 20px 14px;
+  }
+
+  .logoContainer {
+    margin-bottom: 30px;
+  }
+
+  .mainContent {
+    padding: 22px 22px 45px;
+  }
+
+  /*
+    Header changes from horizontal
+    to vertical
+  */
+
+  .pageHeader {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 17px;
+  }
+
+  .pageHeading {
+    width: 100%;
+  }
+
+  .headerActions {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .quickSearch {
+    width: 260px;
+  }
+
+  /*
+    Form becomes wider
+    inside available content
+  */
+
+  .formCard {
+    width: 100%;
+    max-width: 760px;
+
+    margin-top: 20px;
+  }
+}
+
+
+/* ==================================================
+   SMALL TABLET
+   768px and below
+================================================== */
+
+@media (max-width: 768px) {
+  /*
+    Sidebar becomes top navigation
+  */
+
+  .page {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: auto;
+
+    position: relative;
+
+    padding: 12px 16px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid #dfe5ec;
+  }
+
+  .logoContainer {
+    margin-bottom: 12px;
+  }
+
+  .navigation {
+    width: 100%;
+
+    flex-direction: row;
+
+    gap: 6px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navItem {
+    width: auto;
+
+    min-width: max-content;
+
+    padding: 0 11px;
+  }
+
+  .dailyChallenge {
+    display: none;
+  }
+
+  /*
+    Main content
+  */
+
+  .mainContent {
+    width: 100%;
+
+    padding: 20px 18px 40px;
+  }
+
+  /*
+    Header
+  */
+
+  .pageHeader {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 16px;
+
+    border-radius: 10px;
+  }
+
+  .pageHeading h1 {
+    font-size: 26px;
+  }
+
+  .headerActions {
+    width: 100%;
+  }
+
+  .quickSearch {
+    flex: 1;
+
+    width: auto;
+  }
+
+  /*
+    Form
+  */
+
+  .formCard {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+  }
+}
+
+
+/* ==================================================
+   MOBILE
+   576px and below
+================================================== */
+
+@media (max-width: 576px) {
+  .sidebar {
+    padding: 11px 12px;
+  }
+
+  /*
+    Logo
+  */
+
+  .logoContainer {
+    margin-bottom: 10px;
+  }
+
+  .logoIcon {
+    width: 28px;
+    height: 28px;
+
+    font-size: 16px;
+  }
+
+  .logoText {
+    font-size: 17px;
+  }
+
+  /*
+    Navigation
+  */
+
+  .navigation {
+    gap: 5px;
+  }
+
+  .navItem {
+    min-height: 34px;
+
+    padding: 0 9px;
+
+    gap: 7px;
+  }
+
+  .navIcon {
+    width: 16px;
+    min-width: 16px;
+
+    font-size: 16px;
+  }
+
+  .navLabel {
+    font-size: 11px;
+  }
+
+  /*
+    Main
+  */
+
+  .mainContent {
+    padding: 15px 12px 35px;
+  }
+
+  /*
+    Page header
+  */
+
+  .pageHeader {
+    padding: 14px;
+
+    gap: 15px;
+  }
+
+  .pageHeading h1 {
+    font-size: 23px;
+  }
+
+  .pageHeading p {
+    font-size: 11px;
+  }
+
+  /*
+    Search and profile
+  */
+
+  .headerActions {
+    gap: 10px;
+  }
+
+  .quickSearch {
+    flex: 1;
+
+    width: auto;
+  }
+
+  .userName {
+    display: none;
+  }
+
+  /*
+    Form
+  */
+
+  .formCard {
+    margin-top: 15px;
+
+    padding: 20px 16px;
+  }
+
+  /*
+    Two columns become
+    one column
+  */
+
+  .formGrid {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+    margin-bottom: 0;
+  }
+
+  .formGroup,
+  .formGrid .formGroup {
+    margin-bottom: 18px;
+  }
+
+  /*
+    Buttons
+  */
+
+  .formActions {
+    margin-top: 5px;
+
+    gap: 10px;
+  }
+
+  .cancelButton,
+  .saveButton {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0 10px;
+  }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+   400px and below
+================================================== */
+
+@media (max-width: 400px) {
+  /*
+    Hide text from navigation.
+    Icons remain visible.
+  */
+
+  .navLabel {
+    display: none;
+  }
+
+  .navItem {
+    width: 38px;
+    min-width: 38px;
+
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  .navIcon {
+    width: 100%;
+  }
+
+  /*
+    Main spacing
+  */
+
+  .mainContent {
+    padding: 12px 10px 30px;
+  }
+
+  /*
+    Header
+  */
+
+  .pageHeader {
+    padding: 13px;
+  }
+
+  .pageHeading h1 {
+    font-size: 21px;
+  }
+
+  .pageHeading p {
+    font-size: 10px;
+  }
+
+  /*
+    Form
+  */
+
+  .formCard {
+    padding: 18px 13px;
+  }
+
+  .formInput {
+    height: 38px;
+
+    font-size: 12px;
+  }
+
+  /*
+    Buttons stack
+  */
+
+  .formActions {
+    flex-direction: column-reverse;
+
+    align-items: stretch;
+  }
+
+  .cancelButton,
+  .saveButton {
+    width: 100%;
+    flex: none;
+  }
+}
+
+
+/* ==================================================
+   EXTRA SMALL MOBILE
+   340px and below
+================================================== */
+
+@media (max-width: 340px) {
+  .logoText {
+    font-size: 16px;
+  }
+
+  .headerActions {
+    align-items: stretch;
+  }
+
+  .quickSearch {
+    min-width: 0;
+  }
+
+  .formCard {
+    padding: 16px 11px;
+  }
+
+  .formActions {
+    gap: 8px;
+  }
+}
