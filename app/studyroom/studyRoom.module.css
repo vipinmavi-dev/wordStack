@@ -1,0 +1,832 @@
+.app {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    background: #f7f9fb;
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* =========================================
+     SIDEBAR
+  ========================================= */
+  
+  .sidebar {
+    width: 224px;
+    min-height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e4e8ee;
+    padding: 30px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  
+  .logoSection {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 38px;
+    padding-left: 1px;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    background: #006b52;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .logoText {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #172033;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  
+  .navItem {
+    min-height: 36px;
+    padding: 0 11px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #46546c;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .activeNavItem {
+    background: #e9faf3;
+    color: #006b52;
+    font-weight: 600;
+  }
+  
+  .navIcon {
+    width: 17px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  .dailyChallenge {
+    margin-top: auto;
+    background: #e9faf3;
+    border-radius: 11px;
+    padding: 16px 14px;
+  }
+  
+  .dailyChallenge h3 {
+    margin: 0 0 9px;
+    color: #006b52;
+    font-size: 12px;
+  }
+  
+  .dailyChallenge p {
+    margin: 0;
+    color: #53677a;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  
+  
+  /* =========================================
+     MAIN
+  ========================================= */
+  
+  .mainContent {
+    flex: 1;
+    min-width: 0;
+    padding: 22px 38px;
+    box-sizing: border-box;
+  }
+  
+  
+  /* =========================================
+     HEADER
+  ========================================= */
+  
+  .header {
+    min-height: 76px;
+    border: 1px solid #e3e8ef;
+    background: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 26px;
+    box-sizing: border-box;
+  }
+  
+  .headingSection h1 {
+    margin: 0 0 4px;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #10192d;
+    font-size: 27px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  
+  .headingSection p {
+    margin: 0;
+    color: #506078;
+    font-size: 13px;
+  }
+  
+  .headerRight {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .searchBox {
+    width: 225px;
+    height: 32px;
+    border: 1px solid #dce3ec;
+    border-radius: 8px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .searchIcon {
+    color: #8ca0b7;
+    font-size: 18px;
+    margin-right: 6px;
+  }
+  
+  .searchBox input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #34445c;
+    font-size: 11px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .profileImage {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e6ddd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  
+  
+  /* =========================================
+     STUDY LAYOUT
+  ========================================= */
+  
+  .studyLayout {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 22px;
+    align-items: start;
+  }
+  
+  
+  /* =========================================
+     STUDY CARD
+  ========================================= */
+  
+  .studyCard {
+    min-height: 357px;
+    background: #ffffff;
+    border: 1px solid #e1e7ef;
+    border-radius: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 8px 24px rgba(30, 52, 73, 0.04);
+  }
+  
+  .cardContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .tier {
+    margin-bottom: 32px;
+    color: #92a4bd;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .cardContent h2 {
+    margin: 0;
+    color: #10182b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  .pronunciation {
+    margin-top: 17px;
+    color: #4c5870;
+    font-size: 14px;
+  }
+  
+  .revealButton {
+    margin-top: 31px;
+    padding: 9px 15px;
+    border: 0;
+    border-radius: 20px;
+    background: #e9faf3;
+    color: #006b52;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  
+  /* =========================================
+     STATS
+  ========================================= */
+  
+  .statsCard {
+    min-height: 251px;
+    border: 1px solid #e1e7ef;
+    border-radius: 15px;
+    background: #ffffff;
+    padding: 24px 22px;
+    box-sizing: border-box;
+  }
+  
+  .statsCard h2 {
+    margin: 0 0 24px;
+    color: #172033;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+  }
+  
+  .statList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .statRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 11px;
+  }
+  
+  .statRow span {
+    color: #526078;
+  }
+  
+  .statRow strong {
+    color: #172033;
+    font-size: 11px;
+  }
+  
+  .successRate {
+    color: #006b52 !important;
+  }
+  
+  .statsDivider {
+    height: 1px;
+    background: #e5e9ef;
+    margin: 21px 0 20px;
+  }
+  
+  .currentTopic {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .currentTopic span {
+    color: #92a4bd;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  
+  .currentTopic strong {
+    color: #172033;
+    font-size: 12px;
+  }
+  
+  
+  /* =========================================
+     DIFFICULTY
+  ========================================= */
+  
+  .difficultySection {
+    margin-top: 23px;
+  }
+  
+  .difficultyButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+  }
+  
+  .difficultyButton {
+    height: 39px;
+    min-width: 119px;
+    padding: 0 17px;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .hardButton {
+    border: 1px solid #ff3e3e;
+    color: #ed1717;
+    background: #fffafa;
+  }
+  
+  .mediumButton {
+    border: 1px solid #f2a800;
+    color: #d88600;
+    background: #fffdf6;
+  }
+  
+  .easyButton {
+    border: 1px solid #168066;
+    color: #006b52;
+    background: #f7fffb;
+  }
+  
+  
+  /* =========================================
+     CARD NAVIGATION
+  ========================================= */
+  
+  .cardNavigation {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    color: #172033;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .arrowButton {
+    border: 0;
+    background: transparent;
+    color: #526078;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  
+  /* =====================================================
+     TABLET
+  ===================================================== */
+  
+  @media (max-width: 1000px) {
+  
+    .sidebar {
+      width: 200px;
+    }
+  
+    .mainContent {
+      padding: 20px 25px;
+    }
+  
+    .studyLayout {
+      grid-template-columns: minmax(0, 1fr) 260px;
+    }
+  
+    .header {
+      padding: 0 18px;
+    }
+  
+    .headingSection h1 {
+      font-size: 23px;
+    }
+  
+    .searchBox {
+      width: 180px;
+    }
+  }
+  
+  
+  /* =====================================================
+     MOBILE
+     Optimized specifically for iPhone 15:
+     393px × 852px
+  ===================================================== */
+  
+  @media (max-width: 600px) {
+  
+    html,
+    body {
+      width: 100%;
+      min-width: 0;
+      overflow-x: hidden;
+    }
+  
+    .app {
+      width: 100%;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      background: #f7f9fb;
+    }
+  
+  
+    /* -----------------------------------------
+       MOBILE SIDEBAR
+    ----------------------------------------- */
+  
+    .sidebar {
+      width: 100%;
+      min-height: auto;
+      height: auto;
+  
+      padding:
+        12px
+        12px
+        calc(10px + env(safe-area-inset-bottom));
+  
+      border-right: 0;
+      border-bottom: 1px solid #e4e8ee;
+  
+      display: block;
+    }
+  
+    .logoSection {
+      margin: 0 0 12px;
+      padding: 0;
+    }
+  
+    .logo {
+      width: 29px;
+      height: 29px;
+      font-size: 17px;
+    }
+  
+    .logoText {
+      font-size: 18px;
+    }
+  
+    .navigation {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      overflow-x: auto;
+  
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .navigation::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .navItem {
+      flex: 0 0 auto;
+      min-height: 34px;
+      padding: 0 9px;
+      gap: 6px;
+      border-radius: 7px;
+      font-size: 10px;
+    }
+  
+    .navIcon {
+      width: auto;
+      font-size: 15px;
+    }
+  
+    .dailyChallenge {
+      display: none;
+    }
+  
+  
+    /* -----------------------------------------
+       MAIN
+    ----------------------------------------- */
+  
+    .mainContent {
+      width: 100%;
+      padding:
+        10px
+        10px
+        calc(20px + env(safe-area-inset-bottom));
+  
+      box-sizing: border-box;
+    }
+  
+  
+    /* -----------------------------------------
+       HEADER
+    ----------------------------------------- */
+  
+    .header {
+      width: 100%;
+      min-height: auto;
+  
+      padding: 15px 14px;
+  
+      border-radius: 10px;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+  
+      gap: 14px;
+    }
+  
+    .headingSection {
+      width: 100%;
+    }
+  
+    .headingSection h1 {
+      margin-bottom: 5px;
+      font-size: 21px;
+      line-height: 1.15;
+    }
+  
+    .headingSection p {
+      font-size: 11px;
+      line-height: 1.4;
+    }
+  
+  
+    .headerRight {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+  
+    .searchBox {
+      flex: 1;
+      width: auto;
+      height: 34px;
+      min-width: 0;
+    }
+  
+    .searchBox input {
+      font-size: 11px;
+    }
+  
+    .profile {
+      flex: 0 0 auto;
+      gap: 5px;
+      font-size: 10px;
+    }
+  
+    .profileImage {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  
+  
+    /* -----------------------------------------
+       STUDY AREA
+    ----------------------------------------- */
+  
+    .studyLayout {
+      width: 100%;
+      margin-top: 12px;
+  
+      display: flex;
+      flex-direction: column;
+  
+      gap: 12px;
+    }
+  
+  
+    /* -----------------------------------------
+       FLASH CARD
+    ----------------------------------------- */
+  
+    .studyCard {
+      width: 100%;
+      min-height: 310px;
+  
+      border-radius: 15px;
+  
+      padding: 20px 15px;
+  
+      box-shadow: 0 5px 18px rgba(30, 52, 73, 0.035);
+    }
+  
+    .cardContent {
+      width: 100%;
+    }
+  
+    .tier {
+      margin-bottom: 25px;
+      font-size: 10px;
+    }
+  
+    .cardContent h2 {
+      font-size: 38px;
+      line-height: 1;
+    }
+  
+    .pronunciation {
+      margin-top: 14px;
+      font-size: 12px;
+    }
+  
+    .revealButton {
+      margin-top: 27px;
+      padding: 9px 14px;
+      font-size: 10px;
+    }
+  
+  
+    /* -----------------------------------------
+       STATS CARD
+    ----------------------------------------- */
+  
+    .statsCard {
+      width: 100%;
+      min-height: auto;
+  
+      padding: 17px 16px;
+  
+      border-radius: 12px;
+    }
+  
+    .statsCard h2 {
+      margin-bottom: 17px;
+      font-size: 16px;
+    }
+  
+    .statList {
+      gap: 12px;
+    }
+  
+    .statRow {
+      font-size: 11px;
+    }
+  
+    .statRow strong {
+      font-size: 11px;
+    }
+  
+    .statsDivider {
+      margin: 17px 0;
+    }
+  
+    .currentTopic {
+      gap: 6px;
+    }
+  
+    .currentTopic span {
+      font-size: 9px;
+    }
+  
+    .currentTopic strong {
+      font-size: 11px;
+    }
+  
+  
+    /* -----------------------------------------
+       DIFFICULTY BUTTONS
+    ----------------------------------------- */
+  
+    .difficultySection {
+      width: 100%;
+      margin-top: 14px;
+    }
+  
+    .difficultyButtons {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+    }
+  
+    .difficultyButton {
+      width: 100%;
+      min-width: 0;
+      height: 38px;
+  
+      padding: 0 4px;
+  
+      border-radius: 7px;
+  
+      font-size: 9px;
+      white-space: nowrap;
+    }
+  
+  
+    /* -----------------------------------------
+       CARD NAVIGATION
+    ----------------------------------------- */
+  
+    .cardNavigation {
+      margin-top: 12px;
+      gap: 28px;
+      font-size: 11px;
+    }
+  
+    .arrowButton {
+      font-size: 23px;
+    }
+  }
+  
+  
+  /* =====================================================
+     VERY SMALL PHONES
+  ===================================================== */
+  
+  @media (max-width: 375px) {
+  
+    .mainContent {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  
+    .header {
+      padding: 13px 12px;
+    }
+  
+    .headingSection h1 {
+      font-size: 19px;
+    }
+  
+    .studyCard {
+      min-height: 290px;
+    }
+  
+    .cardContent h2 {
+      font-size: 35px;
+    }
+  
+    .difficultyButton {
+      font-size: 8px;
+    }
+  
+    .cardNavigation {
+      gap: 23px;
+    }
+  }
+  
+  
+  /* =====================================================
+     LANDSCAPE PHONE
+  ===================================================== */
+  
+  @media (max-width: 900px) and (orientation: landscape) {
+  
+    .sidebar {
+      padding: 8px 12px;
+    }
+  
+    .logoSection {
+      margin-bottom: 7px;
+    }
+  
+    .mainContent {
+      padding: 10px 14px;
+    }
+  
+    .studyCard {
+      min-height: 260px;
+    }
+  }
