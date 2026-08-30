@@ -1,0 +1,1083 @@
+/* =========================================
+   PAGE
+========================================= */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+  
+    box-sizing: border-box;
+  
+    background: #f7f9fb;
+    color: #172033;
+  
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+  }
+  
+  
+  /* =========================================
+     SIDEBAR
+  ========================================= */
+  
+  .sidebar {
+    width: 225px;
+    min-width: 225px;
+    height: 100vh;
+  
+    position: sticky;
+    top: 0;
+  
+    display: flex;
+    flex-direction: column;
+  
+    box-sizing: border-box;
+  
+    padding: 22px 20px;
+  
+    background: #ffffff;
+  
+    border-right: 1px solid #dfe5ec;
+  }
+  
+  
+  /* =========================================
+     LOGO
+  ========================================= */
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  
+    gap: 10px;
+  
+    margin-bottom: 38px;
+  }
+  
+  .logoIcon {
+    width: 30px;
+    height: 30px;
+  
+    flex-shrink: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 8px;
+  
+    background: #006b52;
+  
+    color: #ffffff;
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .logoText {
+    color: #172033;
+  
+    font-size: 19px;
+    font-weight: 700;
+  }
+  
+  
+  /* =========================================
+     NAVIGATION
+  ========================================= */
+  
+  .navigation {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 7px;
+  }
+  
+  .navItem {
+    width: 100%;
+    min-height: 36px;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 12px;
+  
+    box-sizing: border-box;
+  
+    padding: 0 11px;
+  
+    border-radius: 8px;
+  
+    color: #46546a;
+  
+    text-decoration: none;
+  
+    font-size: 13px;
+    font-weight: 500;
+  
+    transition:
+      background 0.2s ease,
+      color 0.2s ease;
+  }
+  
+  .navItem:hover {
+    background: #f0f7f4;
+  
+    color: #006b52;
+  }
+  
+  .activeNavItem {
+    background: #e9faf3;
+  
+    color: #006b52;
+  
+    font-weight: 600;
+  }
+  
+  .navIcon {
+    width: 18px;
+    min-width: 18px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 18px;
+  }
+  
+  .navLabel {
+    white-space: nowrap;
+  }
+  
+  
+  /* =========================================
+     DAILY CHALLENGE
+  ========================================= */
+  
+  .dailyChallenge {
+    margin-top: auto;
+  
+    padding: 15px;
+  
+    border-radius: 12px;
+  
+    background: #e9faf3;
+  }
+  
+  .challengeTitle {
+    margin: 0 0 8px;
+  
+    color: #006b52;
+  
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .challengeText {
+    margin: 0;
+  
+    color: #526979;
+  
+    font-size: 11px;
+  
+    line-height: 1.55;
+  }
+  
+  
+  /* =========================================
+     MAIN CONTENT
+  ========================================= */
+  
+  .mainContent {
+    min-width: 0;
+  
+    flex: 1;
+  
+    box-sizing: border-box;
+  
+    padding: 38px 38px 60px;
+  }
+  
+  
+  /* =========================================
+     PAGE HEADER
+  ========================================= */
+  
+  .pageHeader {
+    width: 100%;
+    min-height: 77px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 30px;
+  
+    box-sizing: border-box;
+  
+    padding: 12px 18px;
+  
+    border: 1px solid #e1e7ee;
+  
+    background: #f9fbfc;
+  }
+  
+  .pageHeading {
+    min-width: 0;
+  
+    flex: 1;
+  }
+  
+  .pageHeading h1 {
+    margin: 0 0 4px;
+  
+    color: #172033;
+  
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+  
+    font-size: 29px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  
+  .pageHeading p {
+    margin: 0;
+  
+    color: #47566e;
+  
+    font-size: 12px;
+  
+    line-height: 1.5;
+  }
+  
+  
+  /* =========================================
+     HEADER ACTIONS
+  ========================================= */
+  
+  .headerActions {
+    flex-shrink: 0;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 16px;
+  }
+  
+  .quickSearch {
+    width: 225px;
+    height: 32px;
+  
+    position: relative;
+  }
+  
+  .quickSearch input {
+    width: 100%;
+    height: 100%;
+  
+    box-sizing: border-box;
+  
+    padding: 0 10px 0 34px;
+  
+    border: 1px solid #dce3ec;
+    border-radius: 7px;
+  
+    outline: none;
+  
+    background: #ffffff;
+  
+    color: #29364b;
+  
+    font-family: inherit;
+    font-size: 11px;
+  }
+  
+  .quickSearch input::placeholder {
+    color: #9aa8ba;
+  }
+  
+  .quickSearch input:focus {
+    border-color: #80a99c;
+  }
+  
+  .searchIcon {
+    position: absolute;
+  
+    left: 11px;
+    top: 50%;
+  
+    z-index: 1;
+  
+    transform: translateY(-50%);
+  
+    color: #8fa0b4;
+  
+    font-size: 20px;
+  }
+  
+  
+  /* =========================================
+     USER PROFILE
+  ========================================= */
+  
+  .userProfile {
+    display: flex;
+    align-items: center;
+  
+    gap: 8px;
+  }
+  
+  .avatar {
+    width: 32px;
+    height: 32px;
+  
+    flex-shrink: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+  
+    background:
+      linear-gradient(
+        135deg,
+        #b99a75,
+        #5b493c
+      );
+  
+    color: #ffffff;
+  
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .userName {
+    white-space: nowrap;
+  
+    color: #172033;
+  
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  
+  /* =========================================
+     STATISTICS
+  ========================================= */
+  
+  .statistics {
+    width: 100%;
+  
+    display: grid;
+  
+    grid-template-columns:
+      repeat(
+        3,
+        minmax(0, 1fr)
+      );
+  
+    gap: 22px;
+  
+    margin-top: 22px;
+  }
+  
+  
+  /* =========================================
+     STAT CARD
+  ========================================= */
+  
+  .statCard {
+    min-height: 120px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+  
+    box-sizing: border-box;
+  
+    padding: 20px 18px;
+  
+    background: #ffffff;
+  
+    border: 1px solid #dfe6ee;
+  
+    border-radius: 12px;
+  }
+  
+  .statLabel {
+    margin-bottom: 7px;
+  
+    color: #91a0b5;
+  
+    font-size: 11px;
+    font-weight: 700;
+  }
+  
+  .statValue {
+    color: #111a2d;
+  
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+  
+    font-size: 31px;
+    line-height: 1.05;
+    font-weight: 700;
+  }
+  
+  .statDescription {
+    margin: 8px 0 0;
+  
+    color: #4f6079;
+  
+    font-size: 11px;
+  }
+  
+  
+  /* =========================================
+     ANALYTICS GRID
+  ========================================= */
+  
+  .analyticsGrid {
+    display: grid;
+  
+    grid-template-columns:
+      minmax(0, 1.4fr)
+      minmax(0, 1fr);
+  
+    gap: 22px;
+  
+    margin-top: 22px;
+  }
+  
+  
+  /* =========================================
+     COMMON ANALYTICS CARDS
+  ========================================= */
+  
+  .retentionCard,
+  .domainsCard {
+    box-sizing: border-box;
+  
+    background: #ffffff;
+  
+    border: 1px solid #dfe6ee;
+  
+    border-radius: 14px;
+  }
+  
+  .retentionCard {
+    min-height: 318px;
+  
+    padding: 23px;
+  }
+  
+  .domainsCard {
+    min-height: 318px;
+  
+    padding: 23px;
+  }
+  
+  .retentionCard h2,
+  .domainsCard h2 {
+    margin: 0;
+  
+    color: #172033;
+  
+    font-family:
+      Georgia,
+      "Times New Roman",
+      serif;
+  
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+  
+  
+  /* =========================================
+     CARD DESCRIPTION
+  ========================================= */
+  
+  .cardDescription {
+    margin: 13px 0 15px;
+  
+    color: #52627a;
+  
+    font-size: 11px;
+  
+    line-height: 1.5;
+  }
+  
+  
+  /* =========================================
+     RETENTION HEATMAP
+  ========================================= */
+  
+  .heatmap {
+    width: max-content;
+  
+    display: grid;
+  
+    grid-template-columns:
+      repeat(4, 22px);
+  
+    grid-auto-rows: 22px;
+  
+    gap: 8px;
+  
+    margin-top: 4px;
+  }
+  
+  .heatmap span {
+    width: 22px;
+    height: 22px;
+  
+    display: block;
+  
+    box-sizing: border-box;
+  
+    border-radius: 4px;
+  }
+  
+  .heatmapEmpty {
+    background: #f5f8fa;
+  
+    border: 1px solid #f0f3f6;
+  }
+  
+  .heatmapActive {
+    background: #006b52;
+  }
+  
+  
+  /* =========================================
+     STRONGEST DOMAINS
+  ========================================= */
+  
+  .domainList {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 10px;
+  
+    margin-top: 14px;
+  }
+  
+  .domainItem {
+    min-height: 58px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 15px;
+  
+    box-sizing: border-box;
+  
+    padding: 10px 12px;
+  
+    border-radius: 8px;
+  
+    background: #f7f9fb;
+  }
+  
+  .domainInfo {
+    min-width: 0;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 4px;
+  }
+  
+  .domainInfo strong {
+    overflow: hidden;
+  
+    color: #172033;
+  
+    font-size: 12px;
+    font-weight: 700;
+  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .domainInfo span {
+    color: #53647b;
+  
+    font-size: 10px;
+  }
+  
+  .domainStatus {
+    flex-shrink: 0;
+  
+    padding: 5px 8px;
+  
+    border-radius: 4px;
+  
+    background: #e9faf3;
+  
+    color: #006b52;
+  
+    font-size: 9px;
+    font-weight: 700;
+  
+    white-space: nowrap;
+  }
+  
+  
+  /* =========================================
+     LARGE LAPTOP
+     1200px and below
+  ========================================= */
+  
+  @media (max-width: 1200px) {
+    .sidebar {
+      width: 205px;
+      min-width: 205px;
+  
+      padding: 20px 15px;
+    }
+  
+    .mainContent {
+      padding: 30px 28px 50px;
+    }
+  
+    .pageHeader {
+      gap: 20px;
+    }
+  
+    .quickSearch {
+      width: 190px;
+    }
+  
+    .analyticsGrid {
+      grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(0, 1fr);
+    }
+  }
+  
+  
+  /* =========================================
+     TABLET
+     1024px and below
+  ========================================= */
+  
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 190px;
+      min-width: 190px;
+  
+      padding: 20px 14px;
+    }
+  
+    .logoContainer {
+      margin-bottom: 30px;
+    }
+  
+    .mainContent {
+      padding: 24px 22px 45px;
+    }
+  
+    .pageHeader {
+      align-items: flex-start;
+  
+      flex-direction: column;
+  
+      gap: 15px;
+  
+      padding: 17px;
+    }
+  
+    .pageHeading {
+      width: 100%;
+    }
+  
+    .headerActions {
+      width: 100%;
+  
+      justify-content: space-between;
+    }
+  
+    .quickSearch {
+      width: 260px;
+    }
+  
+    .statistics {
+      gap: 16px;
+    }
+  
+    .statCard {
+      padding: 18px 15px;
+    }
+  
+    .statValue {
+      font-size: 27px;
+    }
+  
+    .analyticsGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  /* =========================================
+     SMALL TABLET
+     768px and below
+  ========================================= */
+  
+  @media (max-width: 768px) {
+    .page {
+      display: block;
+    }
+  
+    .sidebar {
+      width: 100%;
+      min-width: 0;
+      height: auto;
+      min-height: auto;
+  
+      position: relative;
+  
+      padding: 12px 16px;
+  
+      border-right: 0;
+  
+      border-bottom: 1px solid #dfe5ec;
+    }
+  
+    .logoContainer {
+      margin-bottom: 12px;
+    }
+  
+    .navigation {
+      flex-direction: row;
+  
+      gap: 6px;
+  
+      overflow-x: auto;
+  
+      scrollbar-width: none;
+    }
+  
+    .navigation::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .navItem {
+      width: auto;
+  
+      min-width: max-content;
+  
+      padding: 0 11px;
+    }
+  
+    .dailyChallenge {
+      display: none;
+    }
+  
+    .mainContent {
+      width: 100%;
+  
+      padding: 20px 18px 40px;
+    }
+  
+    .pageHeader {
+      width: 100%;
+  
+      padding: 16px;
+  
+      border-radius: 10px;
+    }
+  
+    .pageHeading h1 {
+      font-size: 26px;
+    }
+  
+    .headerActions {
+      width: 100%;
+    }
+  
+    .quickSearch {
+      flex: 1;
+  
+      width: auto;
+    }
+  
+    .statistics {
+      grid-template-columns: 1fr;
+  
+      margin-top: 18px;
+    }
+  
+    .statCard {
+      min-height: 105px;
+    }
+  
+    .analyticsGrid {
+      margin-top: 18px;
+    }
+  
+    .retentionCard,
+    .domainsCard {
+      min-height: auto;
+  
+      padding: 20px;
+    }
+  }
+  
+  
+  /* =========================================
+     MOBILE
+     576px and below
+  ========================================= */
+  
+  @media (max-width: 576px) {
+    .sidebar {
+      padding: 11px 12px;
+    }
+  
+    .logoContainer {
+      margin-bottom: 10px;
+    }
+  
+    .logoIcon {
+      width: 28px;
+      height: 28px;
+  
+      font-size: 16px;
+    }
+  
+    .logoText {
+      font-size: 17px;
+    }
+  
+    .navigation {
+      gap: 5px;
+    }
+  
+    .navItem {
+      min-height: 34px;
+  
+      padding: 0 9px;
+  
+      gap: 7px;
+    }
+  
+    .navIcon {
+      width: 16px;
+      min-width: 16px;
+  
+      font-size: 16px;
+    }
+  
+    .navLabel {
+      font-size: 11px;
+    }
+  
+    .mainContent {
+      padding: 15px 12px 35px;
+    }
+  
+    .pageHeader {
+      padding: 14px;
+  
+      gap: 15px;
+    }
+  
+    .pageHeading h1 {
+      font-size: 23px;
+    }
+  
+    .pageHeading p {
+      font-size: 11px;
+    }
+  
+    .headerActions {
+      gap: 10px;
+    }
+  
+    .quickSearch {
+      flex: 1;
+  
+      width: auto;
+    }
+  
+    .userName {
+      display: none;
+    }
+  
+    .statistics {
+      gap: 12px;
+    }
+  
+    .statCard {
+      min-height: 100px;
+  
+      padding: 16px;
+    }
+  
+    .statValue {
+      font-size: 25px;
+    }
+  
+    .statDescription {
+      font-size: 10px;
+    }
+  
+    .retentionCard,
+    .domainsCard {
+      padding: 17px;
+    }
+  
+    .retentionCard h2,
+    .domainsCard h2 {
+      font-size: 18px;
+    }
+  
+    .cardDescription {
+      font-size: 10px;
+    }
+  
+    .domainItem {
+      padding: 9px 10px;
+    }
+  }
+  
+  
+  /* =========================================
+     SMALL MOBILE
+     400px and below
+  ========================================= */
+  
+  @media (max-width: 400px) {
+    .navLabel {
+      display: none;
+    }
+  
+    .navItem {
+      width: 38px;
+      min-width: 38px;
+  
+      justify-content: center;
+  
+      padding: 0;
+    }
+  
+    .navIcon {
+      width: 100%;
+    }
+  
+    .mainContent {
+      padding: 12px 10px 30px;
+    }
+  
+    .pageHeader {
+      padding: 13px;
+    }
+  
+    .pageHeading h1 {
+      font-size: 21px;
+    }
+  
+    .pageHeading p {
+      font-size: 10px;
+    }
+  
+    .statistics {
+      margin-top: 14px;
+    }
+  
+    .statCard {
+      min-height: 95px;
+  
+      padding: 14px;
+    }
+  
+    .statLabel {
+      font-size: 10px;
+    }
+  
+    .statValue {
+      font-size: 23px;
+    }
+  
+    .analyticsGrid {
+      gap: 14px;
+    }
+  
+    .retentionCard,
+    .domainsCard {
+      padding: 15px;
+    }
+  
+    .heatmap {
+      grid-template-columns:
+        repeat(4, 20px);
+  
+      grid-auto-rows: 20px;
+  
+      gap: 7px;
+    }
+  
+    .heatmap span {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .domainItem {
+      gap: 8px;
+    }
+  
+    .domainStatus {
+      padding: 4px 6px;
+  
+      font-size: 8px;
+    }
+  }
+  
+  
+  /* =========================================
+     EXTRA SMALL MOBILE
+     340px and below
+  ========================================= */
+  
+  @media (max-width: 340px) {
+    .logoText {
+      font-size: 16px;
+    }
+  
+    .headerActions {
+      align-items: stretch;
+    }
+  
+    .quickSearch {
+      min-width: 0;
+    }
+  
+    .retentionCard,
+    .domainsCard {
+      padding: 13px;
+    }
+  
+    .domainStatus {
+      display: none;
+    }
+  }
